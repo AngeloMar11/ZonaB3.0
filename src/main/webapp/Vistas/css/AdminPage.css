@@ -1,0 +1,253 @@
+
+.vertical-nav {
+  min-width: 17rem;
+  width: 17rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+  overflow-y: scroll;
+}::-webkit-scrollbar {
+   width: 0em;
+ }
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+}
+
+
+.page-content {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.4s;
+  z-index: -1;
+}
+#cerrarsesion
+{
+  margin-left: 40rem;
+}
+/* for toggle behavior */
+
+#sidebar.active {
+  margin-left: -17rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+#logo{
+  width: 70px;
+  height: 70px;
+  margin-left: 84px;
+}
+
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -17rem;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  #content.active {
+    margin-left: 17rem;
+    width: calc(100% - 17rem);
+  }
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSE
+* ==========================================
+*
+*/
+.animation {
+  position: absolute;
+  right: -200px;
+  animation: slide-in 1s forwards;
+  z-index: -2;
+}
+
+@keyframes slide-in {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+body {
+  background: #599fd9;
+  background: -webkit-linear-gradient(to right, #599fd9, #c2e59c);
+  background: linear-gradient(to left, #599fd9, #b34949);
+
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.separator {
+  margin: 3rem 0;
+  border-bottom: 1px dashed #fff;
+
+}
+
+.text-uppercase {
+  letter-spacing: 0.1em;
+}
+
+.text-gray {
+  color: #aaa;
+}
+.menu {
+
+  top: 50px;
+  left: 0;
+  z-index: 999;
+  background-color: #ffffff;
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+  width: 200px;
+}
+
+.hidden {
+  display: none;
+}
+.perfil-menu-container {
+  position: relative;
+}
+
+#perfil-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  margin-left: 39.5rem;
+  margin-top: -1.2rem;
+  width: 150px;
+  transition: display 0.10s ease-in-out;
+}
+#perfil-menu.show {
+  display: block;
+}
+#perfil
+{
+  margin-left: 30rem;
+}
+.animacion-despliegue {
+  animation: despliegue 0.3s ease-in-out;
+}
+
+@keyframes despliegue {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+input[type="text"],input[type="password"], select {
+  width: 40%;
+  height: 30px;
+  background-color: white;
+}
+
+
+.radio-container {
+  display: inline-block;
+  width: 70px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.radio-container label {
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.radio-container input[type="radio"] {
+  display: inline-block;
+  vertical-align: middle;
+  height: 25px;
+  width: 15px;
+}
+label[for="CC"] {
+  margin-right: 10px;
+}
+
+label[for="CE"] {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: -20px;
+  vertical-align: middle
+}
+#opciones-adicionales{
+  text-decoration: none !important;
+  color: black !important;
+}
+
+#buttoneditaru, #buttoncrearu
+{
+  border: 0ch;
+}
+
+.modal {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(120%, 0%);
+  background-color: #faf4f4;
+  opacity: 95%;
+  border-radius: 10px;
+  padding: 20px;
+  width: 50%;
+  max-width: 450px;
+  max-height: 570px;
+  border: 2px solid black;
+  overflow: visible; /* Agrega una barra de desplazamiento si es necesario*/
+}
+
+
+
+.modal-header {
+  background-color: #757272; /* Cambia este color según tu preferencia */
+  color: #ffffff; /* Cambia este color según tu preferencia */
+  border-top-left-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  color: white;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: red;
+}
+
+#nombre-input,#apellido-input,#tipoEmpleado-input, #correo-input {
+  width: 80% !important;
+}
+

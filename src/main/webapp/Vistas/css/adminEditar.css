@@ -1,0 +1,17 @@
+.table
+{
+    background-color: #f4f4f4;
+    opacity: 90%;
+
+}
+
+#opciones-menu {
+    width: 80%;
+}
+
+table button.buttonedit,
+table button.buttonelim {
+    border: 0px;
+    background-color: white;
+}
+
